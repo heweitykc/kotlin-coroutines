@@ -74,6 +74,7 @@ class PlantListFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        println("item.itemId = ${item.itemId}")
         return when (item.itemId) {
             R.id.filter_zone -> {
                 updateData()
